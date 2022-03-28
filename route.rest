@@ -1,0 +1,24 @@
+GET http://localhost:9000/countries/
+###
+GET http://localhost:9000/countries/id/6240f0cac970ce013a44a52f
+
+###
+GET http://localhost:9000/countries/9
+
+###
+PATCH  http://localhost:9000/countries/Yemen-test/Yemen
+
+###
+DELETE   http://localhost:9000/countries/6240f0d2c970ce013a44a531
+
+
+###
+POST http://localhost:9000/countries/
+Content-Type: application/json
+
+{
+  "name": "Yemen-test",
+  "captial":["Aden","test"],
+  "region":"tbh idk",
+  "population":100000
+}
